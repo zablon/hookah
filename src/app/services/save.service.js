@@ -28,7 +28,7 @@ export default class SaveService {
         };
     }
 
-    getAllHookah() {
+    getHookah() {
         return this.hookah;
     }
 

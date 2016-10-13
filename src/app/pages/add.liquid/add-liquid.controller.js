@@ -5,7 +5,7 @@ export default class AddLiquidController {
         this._saveService.getLiquid();
     }
 
-    setLiquid() {
+    setLiquid(form) {
         if (form.$valid) {
             this._saveService.saveLiquid(this.liquid);
             this._state.go('tabacco');

@@ -5,7 +5,7 @@ export default class AddTabaccoController {
         this._saveService.getTabacco();
     }
 
-    setTabacco() {
+    setTabacco(form) {
         if (form.$valid) {
             this._saveService.saveTabacco(this.tabacco);
             this._state.go('finish');
